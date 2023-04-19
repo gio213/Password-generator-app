@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Giori Patsia" />
+    <meta property="og:title" content="Password generator app" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="QR code component" />
+    <meta
+      property="og:url"
+      content="//https://gio213.github.io/Password-generator-app//"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Password generator app</title>
+  </head>
+  <body>
+    <h1>Password Generator</h1>
+    <div class="passwordDiv">
+      <input type="text" name="" id="passwordOutput" readonly />
+      <p>COPIED</p>
+      <img class="copyImg" src="images/Shape.png" alt="copyImg" />
+    </div>
+    <div class="container">
+      <div class="characterlenghtDiv">
+        <h1>Character Length</h1>
+        <h2>10</h2>
+      </div>
+      <div class="sliderDiv">
+        <input type="range" name="" id="slider" min="0" max="20" value="" />
+      </div>
+      <div class="includeBigDiv">
+        <div class="includeDiv">
+          <input
+            type="checkbox"
+            name="Include Uppercase Letters"
+            value="uppercase"
+          />
+          <h1>Include Uppercase Letters</h1>
+        </div>
+        <div class="includeDiv">
+          <input
+            type="checkbox"
+            name="Include Lowercase Letters"
+            value="lowercase"
+          />
+          <h1>Include Lowercase Letters</h1>
+        </div>
+        <div class="includeDiv">
+          <input type="checkbox" name="Include Numbers" value="numbers" />
+          <h1>Include Numbers</h1>
+        </div>
+        <div class="includeDiv">
+          <input type="checkbox" name="Include Symbols" value="symbols" />
+          <h1>Include Symbols</h1>
+        </div>
+      </div>
+      <div class="strenghtDiv">
+        <p>STRENGTH</p>
+
+        <div class="strenghtTxtColors">
+          <h1>MEDIUM</h1>
+          <div class="stenghtColor"></div>
+          <div class="stenghtColor"></div>
+          <div class="stenghtColor"></div>
+          <div class="stenghtColor"></div>
+        </div>
+      </div>
+
+      <button type="button" class="generateBtn">
+        GENERATE
+        <img src="images/arrow.png" alt="arrow img" />
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
